@@ -1,0 +1,8 @@
+
+- look into documentation on github
+- commit to github
+
+- bring into terraingen and use it
+
+- write thorough unit tests in c# and c++
+	Add all fail tests too (bad shader name, etc)

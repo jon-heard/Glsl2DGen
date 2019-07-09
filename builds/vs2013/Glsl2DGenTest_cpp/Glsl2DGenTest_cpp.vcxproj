@@ -153,11 +153,21 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>Glsl2DGen.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="helpers.cpp" />
+    <ClCompile Include="testManager.cpp" />
+    <ClCompile Include="test_colored.cpp" />
+    <ClCompile Include="test_coloredAlpha.cpp" />
+    <ClCompile Include="test_dataIO.cpp" />
+    <ClCompile Include="test_debugDisplay.cpp" />
+    <ClCompile Include="test_perlin.cpp" />
+    <ClCompile Include="test_shaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="helpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

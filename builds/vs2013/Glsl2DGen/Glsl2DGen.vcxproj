@@ -78,6 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -154,10 +155,12 @@
   <ItemGroup>
     <ClCompile Include="Glsl2DGen.cpp" />
     <ClCompile Include="Glsl2DGen_fncs.cpp" />
+    <ClCompile Include="ShaderHelpers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Glsl2DGen.h" />
     <ClInclude Include="Glsl2DGen_fncs.h" />
+    <ClInclude Include="ShaderHelpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
